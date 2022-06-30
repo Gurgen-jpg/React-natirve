@@ -1,4 +1,5 @@
 import React from 'react';
+import {backgrounds} from "./assets/images/backgrounds";
 import {StyleSheet, Text, View, ImageBackground} from "react-native";
 import {StatusBar} from "expo-status-bar";
 
@@ -7,7 +8,7 @@ export default function TeslaApp(){
         <View style={styles.container}>
             <View style={styles.carContainer}>
                 <ImageBackground
-                    source={require('assets/images/ModelX.jpeg')}
+                    source={backgrounds.modelX}
                     style={styles.image}
                 />
                 <View style={styles.titles}>
@@ -38,10 +39,14 @@ const styles = StyleSheet.create({
         marginTop: '30%',
         width: '100%',
         alignItems: "center",
+        position: "absolute",
+        zIndex: 100,
+
     },
     title: {
         fontSize: 40,
         fontWeight: '500',
+
     },
     subTitle: {
         fontSize: 16,
@@ -50,5 +55,8 @@ const styles = StyleSheet.create({
     image: {
         width: '100%',
         height: '100%',
+        zIndex: 1,
+        resizeMode: "cover",
+        position: "absolute",
     }
 })
