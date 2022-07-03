@@ -142,6 +142,7 @@ export default function App() {
         //     {/*</Text>*/}
         //     {/*</View>*/}
         // </GestureHandlerRootView>
+
     );
 }
 

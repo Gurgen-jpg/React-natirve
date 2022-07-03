@@ -5,6 +5,7 @@ import CarItem from "./components/CarItem/CarItem";
 
 
 
+
 export default function TeslaApp(){
     return (
         <View style={styles.container}>
