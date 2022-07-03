@@ -4,11 +4,11 @@ import {backgrounds} from "../../assets/images/backgrounds";
 import styles from "./styles";
 import StyledButton from "../Button/StyledButton";
 
-type CarItemPropsType = {
+export type CarItemPropsType = {
     name: string
     tagline: string
     image: any //NodeRequire
-    taglineCTA: string
+    taglineCTA?: string
 }
 export default function  CarItem({name, tagline, image, taglineCTA}:CarItemPropsType) {
     return (
